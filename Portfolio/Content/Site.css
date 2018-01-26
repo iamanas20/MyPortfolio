@@ -18,11 +18,89 @@ textarea {
     max-width: 280px;
 }
 
+#navbar {
+    background-color: black;
+}
+
+    #navbar #navlinks {
+        margin-top: 40px;
+    }
+
+        #navbar #navlinks a {
+            color: white;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 300;
+            letter-spacing: 7px;
+            text-align: right;
+        }
+
+        #navbar #navlinks a:hover {
+            border-bottom: .5px solid white;
+            padding-bottom: .5em
+        }
+
+    #navbar button {
+        margin-top: 47px;
+        border: 0px;
+    }
+
+    #navbar a > img {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+    
+.navbar .navbar-toggle:focus,
+.navbar .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar .navbar-toggle {
+    border: none;
+}
+
+.navbar-toggle span.icon-bar {
+    transition: all 0.15s;
+}
+
+.navbar-toggle span:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle span:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed span:nth-child(1),
+.navbar-toggle.collapsed span:nth-child(3) {
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed span:nth-child(2) {
+    opacity: 1;
+}
+
+.animationTarget{
+    visibility: hidden;
+}
+
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
         margin-top: 20px;
+    }
+
+    #navbar #navlinks a {
+        margin-left: 20px;
     }
 
     .body-content {

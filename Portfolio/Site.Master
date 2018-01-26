@@ -14,9 +14,22 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet"> 
+    <script type="text/javascript">
+        function onLoad() {
 
+            $('#hamburgerButton').click();
+            setTimeout(function anotherClick() {
+                $('#hamburgerButton').click();
+            }, 320);
+
+            setTimeout(function makeStuffVisible() {
+                $(".animationTarget").css("visibility", "visible");
+            }, 75);
+        }
+    </script>
 </head>
-<body>
+<body onload="onLoad()">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -39,21 +52,22 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button id="hamburgerButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand animationTarget" runat="server" href="~/">
+                        <img src="Assets/LogoReadyForC4D.png" alt="Alternate Text" width="50" /></a>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                <div id="navlinks" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="animationTarget" runat="server" href="~/">Work</a></li>
+                        <li><a class="animationTarget" runat="server" href="~/About">About</a></li>
+                        <li><a class="animationTarget" runat="server" href="~/Contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,9 +76,9 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
+            <%--<footer>
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+            </footer>--%>
         </div>
 
     </form>
