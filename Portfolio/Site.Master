@@ -26,6 +26,11 @@
             setTimeout(function makeStuffVisible() {
                 $(".animationTarget").css("visibility", "visible");
             }, 75);
+
+
+            setTimeout(function anotherClick() {
+                $('#hamburgerButton').click();
+            }, 400);
         }
     </script>
 </head>
@@ -60,7 +65,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand animationTarget" runat="server" href="~/">
+                    <a class="navbar-brand animationTarget" runat="server" href="~/Default">
                         <img src="Assets/LogoReadyForC4D.png" alt="Alternate Text" width="50" /></a>
                 </div>
                 <div id="navlinks" class="navbar-collapse collapse">

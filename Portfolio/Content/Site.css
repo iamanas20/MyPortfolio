@@ -34,10 +34,10 @@ textarea {
             text-align: right;
         }
 
-        #navbar #navlinks a:hover {
-            border-bottom: .5px solid white;
-            padding-bottom: .5em
-        }
+            #navbar #navlinks a:hover {
+                border-bottom: .5px solid white;
+                padding-bottom: .5em
+            }
 
     #navbar button {
         margin-top: 47px;
@@ -50,7 +50,7 @@ textarea {
     }
 
 
-    
+
 .navbar .navbar-toggle:focus,
 .navbar .navbar-toggle:hover {
     background-color: transparent;
@@ -87,8 +87,33 @@ textarea {
     opacity: 1;
 }
 
-.animationTarget{
+.animationTarget {
     visibility: hidden;
+}
+
+#firstPart {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.nameText, .smallDefinitionText {
+    font-family: 'Dosis', sans-serif;
+}
+
+.nameText {
+    font-size: 24px;
+    letter-spacing: 20px;
+    margin-top: -15px;
+    white-space: nowrap;
+}
+
+.smallDefinitionText {
+    padding-left: 50px;
+    font-size: 48px;
+    letter-spacing: 15px;
+    margin-top: -25px;
+    color: #da3d55;
+    white-space: nowrap;
 }
 
 
@@ -106,4 +131,31 @@ textarea {
     .body-content {
         padding: 0;
     }
+}
+
+@media screen and (max-width: 991px) {
+    .smallDefinitionText {
+        padding-left: 4px;
+        font-size: 35px;
+        letter-spacing: 7px;
+    }
+
+    #justDefinition{
+        margin-top: 50px;
+        margin-left: 30%;
+    }
+
+    .nameText{
+        letter-spacing: 10px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #justDefinition {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
 }
