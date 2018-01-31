@@ -116,7 +116,37 @@ textarea {
     white-space: nowrap;
 }
 
+.secondRow{
+    margin-top: 100px;
+}
 
+.brandLogoText {
+    visibility: visible;
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    letter-spacing: 8px;
+    color: #B4B4B4;
+}
+
+.brandIdentityText {
+    visibility: collapse;
+    text-align: center;
+    margin-top: -30px;
+    color: white;
+    letter-spacing: 20px;
+    font-size: small;
+    font-family: 'Dosis', sans-serif;
+}
+
+.brandLogoWhole{
+    margin-top: 15%;
+}
+
+.uniqueTitleText {
+    letter-spacing: 10px;
+    margin-bottom: 40px;
+    font-family: 'Dosis', sans-serif;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -140,22 +170,44 @@ textarea {
         letter-spacing: 7px;
     }
 
-    #justDefinition{
+    #justDefinition {
         margin-top: 50px;
         margin-left: 30%;
     }
 
-    .nameText{
+    .nameText {
         letter-spacing: 10px;
+    }
+
+    .brandIdentityText{
+        visibility: visible;
+    }
+
+    .brandLogoText {
+        visibility: collapse;
+    }
+
+    .uniqueTitleText {
+        letter-spacing: 5px;
+        font-size: 13px;
     }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 550px) {
     #justDefinition {
         margin-left: 5%;
+    }
+
+    .smallDefinitionText{
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .brandIdentityText {
+        letter-spacing: 10px;
+        font-size: small;
     }
 }
 
 @media screen and (max-width: 1200px) {
-
 }

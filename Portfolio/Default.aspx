@@ -17,4 +17,17 @@
         </div>
     </div>
 
+    <div class="row secondRow">
+        <div class="col-md-9">
+            <p class="uniqueTitleText">That second part at a glance</p>
+            <a><img src="Assets/BookStack.png" alt="Book Stacked And Logoed" width="100%" /></a>
+            <p class="brandIdentityText">Brand Identity</p>
+        </div>
+        <div class="col-md-3 brandLogoWhole">
+            <p class="brandLogoText">Official</p>
+            <p class="brandLogoText">Brand</p>
+            <p class="brandLogoText">Logo</p>
+        </div>
+    </div>
+
 </asp:Content>
