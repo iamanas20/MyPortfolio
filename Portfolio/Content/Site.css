@@ -116,13 +116,13 @@ textarea {
     white-space: nowrap;
 }
 
-.secondRow{
+.secondRow {
     margin-top: 100px;
 }
 
-.secondRow img{
-    max-width: 712px;   
-}
+    .secondRow img {
+        max-width: 712px;
+    }
 
 .brandLogoText, .treeDescriptionText {
     visibility: visible;
@@ -142,7 +142,7 @@ textarea {
     font-family: 'Dosis', sans-serif;
 }
 
-.brandLogoWhole{
+.brandLogoWhole {
     margin-top: 15%;
 }
 
@@ -152,7 +152,7 @@ textarea {
     font-family: 'Dosis', sans-serif;
 }
 
-.thirdRow{
+.thirdRow {
     margin-top: 150px;
 }
 
@@ -162,8 +162,19 @@ textarea {
 
 .thirdRow img {
     max-width: 712px;
+    margin-left: 10%;
 }
 
+.doItWithLoveText {
+    text-align: center;
+    margin-top: 35%;
+    font-size: 86px;
+    white-space: nowrap;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 30px;
+    letter-spacing: 0px;
+}
 
 
 /* Responsive Breakpoints */
@@ -178,6 +189,12 @@ textarea {
 
     .body-content {
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .thirdRow img {
+        margin-left: 0px;
     }
 }
 
@@ -197,7 +214,7 @@ textarea {
         letter-spacing: 10px;
     }
 
-    .brandIdentityText{
+    .brandIdentityText {
         visibility: visible;
     }
 
@@ -213,6 +230,14 @@ textarea {
     .treeImageAndTextContainer {
         margin-top: -500px;
     }
+
+    .thirdRow img {
+        margin-left: 0px;
+    }
+
+    .doItWithLoveText {
+        font-size: 48px;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -220,7 +245,7 @@ textarea {
         margin-left: 5%;
     }
 
-    .smallDefinitionText{
+    .smallDefinitionText {
         font-size: 30px;
         letter-spacing: 2px;
     }
@@ -229,6 +254,10 @@ textarea {
         letter-spacing: 10px;
         font-size: small;
     }
+
+    .doItWithLoveText {
+            font-size: 28px;
+        }
 }
 
 @media screen and (max-width: 1200px) {

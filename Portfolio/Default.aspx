@@ -44,4 +44,8 @@
         </div>
     </div>
 
+    <div class="row fourthRow">
+        <p class="doItWithLoveText">Do it with love</p>
+    </div>
+
 </asp:Content>
