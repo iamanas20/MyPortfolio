@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <%-- Random font... until you change it.. --%>
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
     <div class="row" id="firstPart">
         <div class="col-md-4 col-12">
@@ -20,13 +20,27 @@
     <div class="row secondRow">
         <div class="col-md-9">
             <p class="uniqueTitleText">That second part at a glance</p>
-            <a><img src="Assets/BookStack.png" alt="Book Stacked And Logoed" width="100%" /></a>
+            <a>
+                <img src="Assets/BookStack.png" alt="Book Stacked And Logoed" width="100%" /></a>
             <p class="brandIdentityText">Brand Identity</p>
         </div>
         <div class="col-md-3 brandLogoWhole">
             <p class="brandLogoText">Official</p>
             <p class="brandLogoText">Brand</p>
             <p class="brandLogoText">Logo</p>
+        </div>
+    </div>
+
+    <div class="row thirdRow">
+        <div class="col-md-3 treeDescription">
+            <p class="treeDescriptionText">Small</p>
+            <p class="treeDescriptionText">Tree</p>
+        </div>
+        <div class="col-md-9">
+            <div class="treeImageAndTextContainer">
+                <img src="Assets/CuteTreeOnframe.png" width="100%" alt="CuteTreeOnframe" />
+                <p class="brandIdentityText">Cute Tree</p>
+            </div>
         </div>
     </div>
 

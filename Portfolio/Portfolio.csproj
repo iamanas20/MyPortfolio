@@ -129,6 +129,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Assets\BookStack.png" />
+    <Content Include="Assets\CuteTreeOnFrame.png" />
     <Content Include="Assets\Large Web.png" />
     <Content Include="Assets\LogoReadyForC4D.png" />
     <Content Include="Assets\PortfolioLarge.png" />
